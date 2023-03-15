@@ -42,6 +42,7 @@ make && make install
 mkdir -p ${NGINX_PATH}/temp
 
 cp ../html/* ${NGINX_PATH}/html/
+rm ${NGINX_PATH}/html/index.html
 
 $NGINX_PATH/sbin/nginx -v
 
