@@ -3,15 +3,15 @@
 set -e
 set -u
 
-OpenSSLVersion='openssl-1.1.1t';
-NginxVersion='nginx-1.23.3';
-PcreVersion='pcre-8.45';
+OpenSSLVersion='openssl-3.0.9';
+NginxVersion='nginx-1.23.4';
+PcreVersion='pcre2-10.42';
 ZlibVersion='zlib-1.2.13';
 
-wget --no-check-certificate https://www.openssl.org/source/${OpenSSLVersion}.tar.gz
-wget --no-check-certificate http://zlib.net/${ZlibVersion}.tar.gz
-wget --no-check-certificate https://nchc.dl.sourceforge.net/project/pcre/pcre/8.45/${PcreVersion}.tar.gz
-wget --no-check-certificate https://nginx.org/download/${NginxVersion}.tar.gz
+[ -f ${OpenSSLVersion}.tar.gz ] || wget --no-check-certificate https://www.openssl.org/source/${OpenSSLVersion}.tar.gz
+[ -f ${ZlibVersion}.tar.gz ] || wget --no-check-certificate http://zlib.net/${ZlibVersion}.tar.gz
+[ -f ${PcreVersion}.tar.gz ] || wget --no-check-certificate https://github.com/PCRE2Project/pcre2/releases/download/${PcreVersion}/${PcreVersion}.tar.gz
+[ -f ${NginxVersion}.tar.gz ] || wget --no-check-certificate https://nginx.org/download/${NginxVersion}.tar.gz
 
 NGINX_PATH=/opt/mizhousoft/nginx
 
