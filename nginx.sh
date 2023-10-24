@@ -3,8 +3,8 @@
 set -e
 set -u
 
-OpenSSLVersion='openssl-3.0.11';
-NginxVersion='nginx-1.25.2';
+OpenSSLVersion='openssl-3.0.12';
+NginxVersion='nginx-1.25.3';
 PcreVersion='pcre2-10.42';
 ZlibVersion='zlib-1.3';
 
