@@ -3,10 +3,10 @@
 set -e
 set -u
 
-OpenSSLVersion='openssl-3.0.12';
+OpenSSLVersion='openssl-3.0.13';
 NginxVersion='nginx-1.25.3';
 PcreVersion='pcre2-10.42';
-ZlibVersion='zlib-1.3';
+ZlibVersion='zlib-1.3.1';
 
 [ -f ${OpenSSLVersion}.tar.gz ] || wget --no-check-certificate https://www.openssl.org/source/${OpenSSLVersion}.tar.gz
 [ -f ${ZlibVersion}.tar.gz ] || wget --no-check-certificate http://zlib.net/${ZlibVersion}.tar.gz
