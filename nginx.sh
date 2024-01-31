@@ -44,7 +44,7 @@ mkdir -p ${NGINX_PATH}/temp
 cp -r ../html/* ${NGINX_PATH}/html/
 rm ${NGINX_PATH}/html/index.html
 
-cp ../nginxconfig.io/* ${NGINX_PATH}/conf/nginxconfig.io/
+cp -r ../nginxconfig.io ${NGINX_PATH}/conf
 
 $NGINX_PATH/sbin/nginx -v
 
