@@ -8,7 +8,7 @@ NginxVersion='nginx-1.26.2';
 PcreVersion='pcre2-10.44';
 ZlibVersion='zlib-1.3.1';
 
-[ -f ${OpenSSLVersion}.tar.gz ] || wget --no-check-certificate https://www.openssl.org/source/${OpenSSLVersion}.tar.gz
+[ -f ${OpenSSLVersion}.tar.gz ] || wget --no-check-certificate https://github.com/openssl/openssl/releases/download/${OpenSSLVersion}/${OpenSSLVersion}.tar.gz
 [ -f ${ZlibVersion}.tar.gz ] || wget --no-check-certificate http://zlib.net/${ZlibVersion}.tar.gz
 [ -f ${PcreVersion}.tar.gz ] || wget --no-check-certificate https://github.com/PCRE2Project/pcre2/releases/download/${PcreVersion}/${PcreVersion}.tar.gz
 [ -f ${NginxVersion}.tar.gz ] || wget --no-check-certificate https://nginx.org/download/${NginxVersion}.tar.gz
