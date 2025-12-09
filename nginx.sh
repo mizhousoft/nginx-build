@@ -4,8 +4,8 @@ set -e
 set -u
 
 OpenSSLVersion='openssl-3.5.4';
-NginxVersion='nginx-1.29.2';
-PcreVersion='pcre2-10.46';
+NginxVersion='nginx-1.29.4';
+PcreVersion='pcre2-10.47';
 ZlibVersion='zlib-1.3.1';
 
 [ -f ${OpenSSLVersion}.tar.gz ] || wget --no-check-certificate https://github.com/openssl/openssl/releases/download/${OpenSSLVersion}/${OpenSSLVersion}.tar.gz
