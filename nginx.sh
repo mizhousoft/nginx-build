@@ -26,6 +26,7 @@ cd $NginxVersion
 	--user=mizhou --group=mizhou \
 	--with-http_v2_module \
 	--with-http_ssl_module \
+	--with-http_auth_request_module \
 	--with-http_gzip_static_module \
 	--with-http_stub_status_module \
 	--with-pcre=../$PcreVersion \
