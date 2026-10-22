@@ -13,7 +13,7 @@ ZlibVersion='zlib-1.3.2';
 [ -f ${PcreVersion}.tar.gz ] || wget --no-check-certificate https://github.com/PCRE2Project/pcre2/releases/download/${PcreVersion}/${PcreVersion}.tar.gz
 [ -f ${NginxVersion}.tar.gz ] || wget --no-check-certificate https://nginx.org/download/${NginxVersion}.tar.gz
 
-NGINX_PATH=/opt/mizhousoft/nginx
+NGINX_PATH=/opt/middleware/nginx
 
 tar xzf $OpenSSLVersion.tar.gz
 tar zxf $NginxVersion.tar.gz
