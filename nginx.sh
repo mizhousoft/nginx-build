@@ -23,7 +23,7 @@ tar zxf $ZlibVersion.tar.gz
 cd $NginxVersion
 
 ./configure --prefix=$NGINX_PATH \
-	--user=mizhou --group=mizhou \
+	--user=nginx --group=nginx \
 	--with-http_v2_module \
 	--with-http_ssl_module \
 	--with-http_auth_request_module \
@@ -46,6 +46,9 @@ cp -r ../html/* ${NGINX_PATH}/html/
 [ -f ${NGINX_PATH}/html/index.html ] && rm ${NGINX_PATH}/html/index.html
 
 cp -r ../nginxconfig.io ${NGINX_PATH}/conf
+
+chown -R nginx:nginx /opt/middleware/nginx
+chown -R nginx:nginx /opt/middleware/nginx
 
 $NGINX_PATH/sbin/nginx -v
 
