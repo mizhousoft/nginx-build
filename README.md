@@ -10,5 +10,7 @@ openssl rsa -aes256 -in site.key -out site.sec.key
 
 useradd -r -s /sbin/nologin -d /opt/middleware/nginx nginx
 
+mkdir -p /opt/middleware/nginx
 chown -R nginx:nginx /opt/middleware/nginx
 chown -R nginx:nginx /opt/middleware/nginx
+
