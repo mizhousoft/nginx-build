@@ -4,7 +4,7 @@ set -e
 set -u
 
 OpenSSLVersion='openssl-3.5.9';
-NginxVersion='nginx-1.30.6';
+NginxVersion='nginx-1.30.7';
 PcreVersion='pcre2-10.49';
 ZlibVersion='zlib-1.3.2';
 
